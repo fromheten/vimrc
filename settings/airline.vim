@@ -2,10 +2,10 @@
 set laststatus=2
 
 " Airline settings
-let g:airline_theme='badwolf'
+let g:airline_theme='wombat'
 
 let g:airline_powerline_fonts = 1
-set guifont=Source_Code_Pro_for_Powerline:h10 
+set guifont=Source_Code_Pro_for_Powerline:h12
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
