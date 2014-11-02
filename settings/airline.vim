@@ -1,12 +1,18 @@
 " Start airline upon vim start
 set laststatus=2
+
 " Airline settings
 let g:airline_theme='badwolf'
 
-"Statusline settings
 let g:airline_powerline_fonts = 1
+set guifont=Source_Code_Pro_for_Powerline:h10 
+
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
+endif
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
 endif
 
 " unicode symbols

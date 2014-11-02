@@ -16,7 +16,6 @@ Plugin 'rking/ag.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-scripts/closetag.vim'
-Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 " Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/endline'
@@ -25,10 +24,16 @@ Plugin 'mxw/vim-jsx'
 Plugin 'mattn/emmet-vim'
 Plugin 'dag/vim-fish'
 
+Plugin 'vim-scripts/gitignore'
+
 Plugin 'tpope/vim-rails'
 
 Plugin 'marijnh/tern_for_vim'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'ervandew/supertab'
+
+" CSS colors
+Plugin 'skammer/vim-css-color'
 
 "Snipmate things
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -58,7 +63,7 @@ for f in split(glob('~/.vim/settings/*.vim'), '\n')
 endfor
 
 " Reaload this file
-nnoremap <Leader>s :source ~/.vimrc<Cr>
+nnoremap <Leader>s :source ~/.vim/vimrc<Cr>
 syntax on
 
 "As long as $SHELL is fish, this is needed
