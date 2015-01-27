@@ -3,7 +3,7 @@ snippet reclass
 		render: function () {
 			return (
 				${2}
-			)
+			);
 		}
 	});
 
@@ -12,3 +12,13 @@ snippet v
 
 snippet var
 	var ${1};
+
+snippet map
+	${1}.map(function(element, index, array) {
+		${2}
+	});
+
+snippet reduce
+	${1}.reduce(function(previousValue, currentValue, index, array){
+		${2}
+	});

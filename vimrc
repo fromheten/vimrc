@@ -17,9 +17,11 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-scripts/closetag.vim'
 Plugin 'scrooloose/syntastic'
-" Plugin 'groenewege/vim-less'
+Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/endline'
 Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
 Plugin 'mxw/vim-jsx'
 Plugin 'mattn/emmet-vim'
 Plugin 'dag/vim-fish'
@@ -29,11 +31,11 @@ Plugin 'vim-scripts/gitignore'
 Plugin 'tpope/vim-rails'
 
 Plugin 'marijnh/tern_for_vim'
-Plugin 'Valloric/YouCompleteMe'
-" Plugin 'ervandew/supertab'
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 
 " CSS colors
-Plugin 'skammer/vim-css-color'
+" Plugin 'skammer/vim-css-color' "FIXME Doesnt work right now, debug later
 
 "Snipmate things
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -64,6 +66,7 @@ endfor
 
 " Reaload this file
 nnoremap <Leader>s :source ~/.vim/vimrc<Cr>
+nnoremap <Leader>p :source ~/.vim/vimrc<Cr>:PluginInstall<Cr>
 syntax on
 
 "As long as $SHELL is fish, this is needed
@@ -110,7 +113,7 @@ set hidden " Allows buffers to exist without a window. It's a good thing
 " Indentation & Tabulation
 set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set smarttab
 
 set backspace=indent,eol,start
@@ -119,8 +122,6 @@ set backspace=indent,eol,start
 set incsearch
 set ignorecase
 set smartcase
-set hlsearch
-nnoremap <Leader>q :nohlsearch<CR>
 
 "No thanks, I don't need no swap
 set noswapfile
